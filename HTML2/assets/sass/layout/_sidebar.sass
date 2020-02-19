@@ -1,0 +1,164 @@
+/* sidebar css start */
+.search-from
+  .custom-input-field
+    position: relative
+    input 
+      width: 100%
+      height: 60px
+      padding-top: 0
+      padding-left: 0
+      border: none
+      border-bottom: 1px solid rgba(151, 175, 213, 0.2)
+      +border-radius(0)
+      &:focus 
+        border-color: $base-color
+    i 
+      position: absolute
+      top: 21px
+      right: 20px
+      color: $para-color
+      font-size: 18px
+.sidebar
+  +transition(all 0.3s)
+  &.active 
+    position: fixed
+    top: 148px
+    z-index: 99
+    @media (max-width: 991px)
+      position: static
+  @media (max-width: 991px)
+    margin-top: 65px
+  .widget 
+    background-color: $bg-one
+    padding: 30px 30px
+    +border-radius(8px)
+  .widget + .widget 
+    margin-top: 50px
+    @media (max-width: 991px)
+      margin-top: 40px
+  .widget-title 
+    font-size: 24px
+    text-transform: capitalize
+    margin-bottom: 30px
+  .search-widget 
+    .widget-title 
+      margin-bottom: 20px
+  .category-list
+    li 
+      &:first-child
+        a 
+          padding-top: 0
+      &:last-child
+        a 
+          padding-bottom: 0
+      a 
+        display: block 
+        padding: 15px 0
+        text-transform: capitalize
+        span 
+          float: right
+          &::before 
+            content: '('
+          &::after 
+            content: ')'
+    li+li 
+      border-top: 1px solid rgba(151, 175, 213, 0.2)
+  .archived-list
+    li 
+      &:first-child
+        a 
+          padding-top: 0
+      &:last-child
+        a 
+          padding-bottom: 0
+      a 
+        display: block 
+        padding: 15px 0
+        text-transform: capitalize
+        span 
+          float: right
+    li+li 
+      border-top: 1px solid rgba(151, 175, 213, 0.2)
+  .tags 
+    +d-flex
+    margin: -5px
+    li
+      margin: 5px
+      a 
+        padding: 8px 25px
+        text-transform: capitalize
+        border: 1px solid $border-color
+        +border-radius(5px)
+  .call-widget
+    position: relative
+    z-index: 9
+    padding-top: 50px
+    padding-bottom: 50px
+    &::before 
+      position: absolute
+      content: "\f105"
+      font-family: 'Flaticon'
+      top: 50%
+      left: 50%
+      +transform(translate(-50%, -50%))
+      z-index: -1
+      color: rgba(#ffffff, 0.1)
+      font-size: 100px
+    .caption
+      margin-bottom: 10px
+    a 
+      font-weight: 700
+      color: $base-color
+      font-size: 28px
+
+.small-post-list
+  .small-single-post
+    padding: 15px 0
+    &:first-child
+      padding-top: 0
+    &:last-child
+      padding-bottom: 0
+    +d-flex
+    .thumb 
+      width: 60px
+      height: 60px
+      +border-radius(50%)
+      overflow: hidden
+      img 
+        width: 60px
+        height: 60px
+        object-fit: cover 
+        object-position: center
+    .content
+      width: calc(100% - 60px)
+      padding-left: 20px
+    .post-title
+      margin-bottom: 3px
+      a 
+        font-size: 18px
+    .post-meta 
+      +d-flex
+      margin: -3px -7px
+      li 
+        margin: 3px 7px 
+        a 
+          font-size: 14px
+          font-style: italic
+  .small-single-post + .small-single-post
+    border-top: 1px solid rgba(151, 175, 213, 0.2)
+
+.privacy-list
+  li
+    padding: 10px 0
+    &:first-child
+      padding-top: 0
+    &:last-child
+      padding-bottom: 0
+  li+li
+    border-top: 1px solid rgba(151, 175, 213, 0.2)
+.privacy-section 
+  .sidebar 
+    @media (max-width: 991px)
+      margin-top: 0
+      margin-bottom: 50px
+/* sidebar css end */

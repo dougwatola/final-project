@@ -1,0 +1,176 @@
+/* header-section start */
+.header-section
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+  z-index: 9999999
+  @media (max-width: 1199px)
+    background-color: $bg-two
+  &.menu-fixed 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 9999
+    .header-bottom
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3)
+      background-color: $bg-two
+      padding: 5px 0
+  .header-bottom
+    padding: 39px 0
+    @media (max-width: 1199px)
+      padding: 10px 0
+  .site-logo
+    img 
+      @media (max-width: 380px)
+        max-width: 150px
+  .main-menu 
+    @media (max-width: 1199px)
+      padding: 15px 0
+    li 
+      position: relative
+      &.menu_has_children
+        position: relative
+        &.open 
+          .sub-menu 
+            display: block
+        >a
+          @media (max-width: 1199px)
+            display: block
+          &::before
+            position: absolute
+            content: "\f107"
+            font-family: 'FontAwesome'
+            top: 0
+            right: 0
+            color: $para-color
+            +transition(all 0.3s)
+            display: none
+            @media (max-width: 1199px)
+              display: block
+              top: 9px
+        &:hover
+          >a::before
+            +transform(rotate(180deg))
+            color: $base-color
+      a
+        padding: 34px 15px 34px 0
+        text-transform: uppercase
+        font-size: 16px
+        color: #e7e7f4
+        position: relative
+        @media (max-width: 1199px)
+          padding: 8px 0
+          display: block
+          border-bottom: 1px solid rgba(#ffffff, 0.1)
+        &:hover,&:focus
+          color: $base-color
+      .sub-menu
+        position: absolute
+        width: 220px
+        top: 105%
+        left: -20px
+        z-index: 999
+        background-color: darken($base-color, 5%)
+        padding: 10px 0
+        border-top: 2px solid $base-color
+        -webkit-box-shadow: 0px 18px 54px -8px rgba(0,0,0,0.15)
+        box-shadow: 0px 18px 54px -8px rgba(0,0,0,0.15)
+        +border-radius(5px)
+        +transition(all 0.3s)
+        opacity: 0
+        visibility: hidden
+        @media (max-width: 1199px)
+          opacity: 1
+          visibility: visible
+          display: none
+          position: static
+          +transition(none)
+          width: 100%
+
+        li
+          a
+            padding: 8px 20px
+            display: block
+            color: $heading-color
+            @media (max-width: 1199px)
+              font-size: 16px
+            &:hover 
+              background-color: rgba(38, 174, 97, 0.05)
+              color: #ffffff
+              text-decoration: underline
+        li+li
+          margin-left: 0
+      &:hover .sub-menu
+        top: 100%
+        opacity: 1
+        visibility: visible
+    li+li
+      margin-left: 20px
+      @media (max-width: 1199px)
+        margin-left: 0
+  .nav-right
+    margin-left: 30px
+    @media (max-width: 1199px)
+      margin-left: 0
+.navbar-collapse 
+  @media (max-width: 767px)
+    max-height: 320px
+    overflow: auto
+.navbar-toggler
+  padding: 0
+  border: none
+  &:focus
+    outline: none
+.menu-toggle
+  margin: 22px 0
+  position: relative
+  display: block
+  width: 35px
+  height: 20px
+  cursor: pointer
+  background: transparent
+  border-top: 2px solid
+  border-bottom: 2px solid
+  color: #000000
+  font-size: 0
+  +transition(all 0.25s ease-in-out)
+  cursor: pointer
+  @media (max-width: 1199px)
+    color: #ffffff
+.menu-toggle:before, .menu-toggle:after
+  content: ''
+  display: block
+  width: 100%
+  height: 2px
+  position: absolute
+  top: 50%
+  left: 50%
+  background: currentColor
+  +transform(translate(-50%, -50%))
+  transition: -webkit-transform 0.25s ease-in-out
+  -webkit-transition: -webkit-transform 0.25s ease-in-out
+  -o-transition: -webkit-transform 0.25s ease-in-out
+  transition: transform 0.25s ease-in-out
+  -moz-transition: -webkit-transform 0.25s ease-in-out
+  -ms-transition: -webkit-transform 0.25s ease-in-out
+  @media (max-width: 1199px)
+    background-color: #ffffff
+span.is-active 
+  border-color: transparent
+span.is-active:before
+  +transform(translate(-50%, -50%) rotate(45deg))
+span.is-active:after
+  +transform(translate(-50%, -50%) rotate(-45deg))
+span.menu-toggle:hover 
+  color: #000000
+  @media (max-width: 1199px)
+    color: #ffffff
+span.is-active
+  border-color: transparent
+span.is-active:before 
+  +transform(translate(-50%, -50%) rotate(45deg))
+span.is-active:after
+  +transform(translate(-50%, -50%) rotate(-45deg))
+/* header-section end */

@@ -1,0 +1,116 @@
+/* footer-section css start */
+.footer-section 
+  background-position: top
+  position: relative
+  overflow: hidden
+  @media (max-width: 1199px)
+    background-color: $bg-one
+  .man-left, .dot-left, .man-right
+    position: absolute
+  .man-left 
+    bottom: 0
+    left: 200px
+    @media (max-width: 1850px)
+      left: 100px
+    @media (max-width: 1550px)
+      left: 0
+    @media (max-width: 1350px)
+      width: 12%
+    @media (max-width: 767px)
+      display: none
+    .coin 
+      position: absolute
+      top: 36px
+      left: 57px
+      width: 82px
+      animation: flow 3s linear infinite 
+      @media (max-width: 1350px) 
+        display: none
+  .dot-left
+    left: 0
+    bottom: 0
+  .man-right
+    bottom: 0
+    right: 0
+    text-align: right
+    @media (max-width: 767px)
+      display: none
+    img 
+      @media (max-width: 1550px)
+        width: 75%
+      @media (max-width: 1350px)
+        width: 65%
+.footer-top
+  padding-top: 150px
+  @media (max-width: 1199px)
+    padding-top: 120px
+  @media (max-width: 991px)
+    padding-top: 90px
+  @media (max-width: 575px)
+    padding-top: 80px
+.footer-bottom
+  padding-top: 100px
+  padding-bottom: 40px
+  @media (max-width: 991px)
+    padding-top: 65px
+.footer-widget
+  .footer-logo 
+    margin-bottom: 30px
+  .social-media-links 
+    margin-top: 30px
+    +d-flex
+    margin-left: -10px
+    margin-right: -10px
+    li 
+      width: 38px
+      height: 38px
+      line-height: 38px
+      background-color: rgb(15, 25, 50)
+      text-align: center
+      margin: 5px 10px
+      +border-radius(50%)
+      a 
+        display: block
+        color: $para-color
+  .footer-widget-title 
+    margin-bottom: 30px
+  .short-links 
+    li 
+      position: relative
+      padding-left: 20px
+      &::before 
+        position: absolute
+        content: "\f101"
+        top: 0
+        left: 0
+        font-family: 'FontAwesome'
+    li+li 
+      margin-top: 10px
+  .company-info-list 
+    li+li 
+      margin-top: 10px
++keyframes(flow)
+  0%
+    top: 36px
+    left: 57px
+  20%
+    top: 65px
+    left: 85px
+    width: 
+  40%
+    top: 85px
+    left: 105px
+    width: 70px
+  60%
+    top: 110px
+    left: 125px
+    width: 60px
+  80% 
+    top: 135px
+    left: 137px
+    width: 55px
+  100%
+    top: 185px
+    left: 155px
+    width: 45px
+/* footer-section css end */

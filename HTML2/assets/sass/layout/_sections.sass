@@ -1,0 +1,1874 @@
+/* feature-section css start */
+.feature-thumb
+  position: relative
+  text-align: center
+  @media (max-width: 991px)
+    display: none
+  .main-shape 
+    width: 80%
+  .coin-1,.coin-2,.coin-3,.circle
+    position: absolute
+  .coin-1
+    bottom: 11%
+    left: 32%
+    animation: customBounce 3s infinite linear
+    animation-delay: 0.3s
+  .coin-2
+    bottom: 20%
+    left: 45%
+    animation: customBounce 3s infinite linear
+    animation-delay: 0.7s
+  .coin-3
+    bottom: 30%
+    left: 59%
+    animation: customBounce 3s infinite linear
+    animation-delay: 1.3s
+  .circle
+    top: 0
+    left: 0
+    z-index: -1
+    width: 100% 
+    height: 100%
+    animation: circleSpin 7s infinite linear
++keyframes(customBounce)
+  0%
+    +transform(translateY(0))
+  25%
+    +transform(translateY(-10px))
+  50%
+    +transform(translateY(-20px))
+  75%
+    +transform(translateY(-10px))
+  100%
+    +transform(translateY(0px))
+
++keyframes(circleSpin)
+  0%
+    +transform(rotate(0deg))
+  25%
+    +transform(rotate(360deg))
+.feature-item
+  margin-bottom: 70px
+  @media (max-width: 991px)
+    width: 50%
+    float: left
+    padding: 0 15px!important
+    margin-bottom: 50px
+  @media (max-width: 575px)
+    width: 100%
+    margin-bottom: 40px
+  &:last-child
+    margin-bottom: -4px!important
+  .feature-item-header
+    +d-flex
+    align-items: center
+    i 
+      width: 75px
+      color: #ffffff
+      font-size: 52px
+      line-height: 1
+    .title
+      width: calc(100% - 75px)
+      text-transform: capitalize
+  .feature-item-content 
+    margin-top: 26px
+    @media (max-width: 575px)
+      margin-top: 15px
+  &.style--two 
+    background-color: $bg-one
+    padding: 0 30px 35px 30px!important
+    text-align: center!important
+    +border-radius(5px)
+    width: 100%
+    margin-bottom: 30px!important
+    .icon
+      width: 73px
+      height: 105px
+      margin-left: auto 
+      margin-right: auto
+      background-color: rgb(96, 162, 239)
+      line-height: 120px
+      text-align: center
+      +border-radius(0 0 45px 45px)
+      i 
+        color: #ffffff
+        font-size: 42px
+        margin-left: 5px
+    .title
+      margin-top: 35px
+    p 
+      margin-top: 25px
+.feature-section 
+  .row.feature-area 
+    div[class*="col"]:nth-child(1)
+      @media (max-width: 575px)
+        margin-bottom: 40px
+      .feature-item
+        padding-right: 50px
+        text-align: right
+        @media (max-width: 991px)
+          padding-right: 0
+          text-align: left
+        .feature-item-header
+          justify-content: flex-end
+          @media (max-width: 991px)
+            justify-content: flex-start
+          i 
+            order: 1
+            @media (max-width: 991px)
+              order: 0
+      .feature-item:nth-of-type(2n + 1)
+        .feature-item-header
+          i 
+            color: #2e90c8 
+      .feature-item:nth-of-type(2n + 2)
+        .feature-item-header
+          i 
+            color: #3ec3c8
+    div[class*="col"]:nth-child(2)
+      .feature-item
+        padding-left: 50px
+        @media (max-width: 991px)
+          padding-left: 0
+          margin-bottom: 0
+        @media (max-width: 575px)
+          margin-bottom: 40px
+      .feature-item:nth-of-type(2n + 1)
+        .feature-item-header
+          i 
+            color: #e43150  
+      .feature-item:nth-of-type(2n + 2)
+        .feature-item-header
+          i 
+            color: #f7a139
+    div[class*="col"]:nth-of-type(3n + 1)
+      .feature-item 
+        &.style--two
+          .icon 
+            background-color: #60a2ef
+    div[class*="col"]:nth-of-type(3n + 2)
+      .feature-item 
+        &.style--two
+          .icon
+            background-color: #8743e6
+    div[class*="col"]:nth-of-type(3n + 3)
+      .feature-item 
+        &.style--two
+          .icon
+            background-color: #ef428c
+.featues-thumb 
+  @media (max-width: 991px)
+    display: none
+
+/* featues-section css end */
+
+/* price-section css start */
+.price-section
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%)
+  @media (max-width: 1199px)
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%)
+  .section-header
+    margin-bottom: 128px
+    @media (max-width: 991px)
+      margin-bottom: 110px
+  .margin-bottom-none 
+    margin-bottom: -118px
+    @media (max-width: 991px)
+      margin-bottom: -100px
+.price-item
+  text-align: center
+  padding: 30px 30px 58px 30px 
+  border: 1px solid $border-color
+  +border-radius(8px)
+  margin-bottom: 118px
+  @media (max-width: 991px)
+    margin-bottom: 100px
+  &:hover
+    .price-amount
+      background-image: url(../images/elements/price-shape-2.png)
+  .package-name 
+    text-transform: uppercase
+  .package-feature-list
+    margin-top: 28px
+    li 
+      &::before 
+        content: "\f00c"
+        font-family: 'FontAwesome'
+        margin-right: 10px
+    li+li 
+      margin-top: 10px
+  .border-btn
+    margin-top: 53px
+  .price-amount 
+    width: 149px
+    height: 128px
+    overflow: hidden
+    display: inline-block
+    background-image: url(../images/elements/price-shape.png)
+    margin-top: -90px
+    margin-bottom: 48px
+    +transition(all 0.5s)
+    .inner
+      width: 149px
+      height: 128px
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      .price 
+        color: #ffffff
+        font-weight: 700
+        font-size: 30px
+/* price-section css end */
+
+/* app-section css start */
+.app-section 
+  position: relative
+  .design-object 
+    position: absolute
+    top: 0
+    left: 5%
+    width: 90%
+.app-thumb
+  position: relative
+  width: 446px
+  height: 448px
+  @media (max-width: 991px)
+    margin-bottom: 50px
+  @media (max-width: 1199px) and (min-width: 992px)
+    width: auto 
+    height: auto
+  .left-image 
+    position: absolute
+    top: 0
+    right: 32%
+    animation: customBounce 3s linear infinite
+    animation-delay: 0.3s
+    @media (max-width: 575px)
+      width: 20%
+  .right-image 
+    position: absolute
+    top: 21%
+    right: -5%
+    animation: customBounce 3s linear infinite
+    animation-delay: 1s
+    @media (max-width: 575px)
+      width: 25%
+      right: 0
+.app-content 
+  .title
+    text-transform: uppercase
+    margin-bottom: 33px
+  .sub-description
+    font-family: $heading-font
+    color: $para-color
+    font-size: 20px
+    font-weight: 400
+    margin-top: 20px
+  p 
+    margin-top: 29px
+  .btn-area 
+    margin-top: 43px
+    margin-left: -28px
+    margin-right: -28px
+    margin-bottom: -20px
+    a 
+      margin: 20px 28px
+
+/* app-section css end */
+
+/* statistics-section css start */
+.statistics-section 
+  &.pb-90
+    @media (max-width: 1199px)
+      padding-bottom: 120px
+    @media (max-width: 991px)
+      padding-bottom: 90px
+    @media (max-width: 575px)
+      padding-bottom: 80px
+.statistics-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.statistics-content
+  padding-right: 30px
+  .title
+    text-transform: uppercase
+  .sub-description
+    font-family: $heading-font
+    color: $para-color
+    font-size: 20px
+    font-weight: 400
+    margin-top: 33px
+    @media (max-width: 575px)
+      font-size: 18px
+  p 
+    margin-top: 25px
+.statistics-item 
+  +d-flex
+  .round-icon
+    width: 25px
+    height: 25px
+    +border-radius(50%)
+    box-shadow: 0px 0px 56px 24px rgba(0, 0, 0, 0.6)
+  .content
+    width: calc(100% - 25px)
+    padding-left: 25px
+    .title
+      margin-bottom: 19px
+div[class*="col"]:nth-child(1)
+  .statistics-item
+    .round-icon
+      background-image: -moz-linear-gradient( 34deg, rgb(76,77,195) 61%, rgb(166,166,225) 89%, rgb(255,255,255) 97%)
+      background-image: -webkit-linear-gradient( 34deg, rgb(76,77,195) 61%, rgb(166,166,225) 89%, rgb(255,255,255) 97%)
+      background-image: -ms-linear-gradient( 34deg, rgb(76,77,195) 61%, rgb(166,166,225) 89%, rgb(255,255,255) 97%)
+div[class*="col"]:nth-child(2)
+  .statistics-item
+    .round-icon
+      background-image: -moz-linear-gradient( 34deg, rgb(135,67,230) 61%, rgb(195,161,243) 89%, rgb(255,255,255) 97%)
+      background-image: -webkit-linear-gradient( 34deg, rgb(135,67,230) 61%, rgb(195,161,243) 89%, rgb(255,255,255) 97%)
+      background-image: -ms-linear-gradient( 34deg, rgb(135,67,230) 61%, rgb(195,161,243) 89%, rgb(255,255,255) 97%)
+div[class*="col"]:nth-child(3)
+  .statistics-item
+    .round-icon
+      background-image: -moz-linear-gradient( 34deg, rgb(239,66,140) 61%, rgb(247,161,198) 89%, rgb(255,255,255) 97%)
+      background-image: -webkit-linear-gradient( 34deg, rgb(239,66,140) 61%, rgb(247,161,198) 89%, rgb(255,255,255) 97%)
+      background-image: -ms-linear-gradient( 34deg, rgb(239,66,140) 61%, rgb(247,161,198) 89%, rgb(255,255,255) 97%)
+div[class*="col"]:nth-child(4)
+  .statistics-item
+    .round-icon
+      background-image: -moz-linear-gradient( 34deg, rgb(96,162,239) 61%, rgb(176,209,247) 89%, rgb(255,255,255) 97%)
+      background-image: -webkit-linear-gradient( 34deg, rgb(96,162,239) 61%, rgb(176,209,247) 89%, rgb(255,255,255) 97%)
+      background-image: -ms-linear-gradient( 34deg, rgb(96,162,239) 61%, rgb(176,209,247) 89%, rgb(255,255,255) 97%)
+
+/* statistics-section css end */
+
+/* investor-section css start */
+.investor-section 
+  padding-top: 50px
+  background-position: top
+  &.curve-bg 
+    background-position: 50% 21%
+  &.bg_img
+    @media (max-width: 1199px)
+      padding-top: 120px
+    @media (max-width: 991px)
+      padding-top: 90px
+    @media (max-width: 1199px)
+      background-color: $bg-one
+    @media (max-width: 575px)
+      padding-top: 80px
+  &.pt-150
+    padding-top: 150px
+    @media (max-width: 1199px)
+      padding-top: 120px
+    @media (max-width: 991px)
+      padding-top: 90px
+    @media (max-width: 575px)
+      padding-top: 80px
+.investor-single 
+  +d-flex
+  align-items: center
+  .thumb
+    width: 281px
+    overflow: hidden
+    @media (max-width: 1199px)
+      width: auto
+    @media (max-width: 1199px)
+      margin: 0 auto
+    @media (max-width: 575px)
+      text-align: center
+  .content
+    width: calc(100% - 281px)
+    padding-left: 30px
+    @media (max-width: 1199px)
+      width: 100%
+      padding-left: 0
+      margin-top: 30px
+      text-align: center
+    @media (max-width: 575px)
+      text-align: center
+      padding: 0 100px
+    @media (max-width: 400px)
+      padding: 0
+    .investor-name 
+      text-transform: capitalize
+      margin-bottom: 7px
+    .designation
+      color: #b32749
+      text-transform: capitalize
+    p 
+      margin-top: 15px
+    .invest-amount 
+      margin-top: 15px
+      color: #60a2ef
+  &.style--two 
+    .thumb
+      width: auto 
+      height: auto
+      mask-image: none
+      -webkit-mask-image: none
+      position: relative
+      &:hover 
+        .investor-info
+          bottom: 0
+      @media (max-width: 767px) 
+        +border-radius(5px)
+        overflow: hidden
+        &:hover 
+          .investor-info 
+            opacity: 1
+            visibility: visible
+      img 
+        width: 100%
+        +border-radius(115px 0 115px 0)
+        +transition(all 0.3s)
+        @media (max-width: 767px) 
+          +border-radius(5px)
+      .investor-info 
+        position: absolute
+        bottom: 25px 
+        right: 0
+        width: calc(100% - 50px)
+        background-color: $bg-two
+        padding: 30px 30px
+        text-align: center
+        +transition(all 0.3s)
+        @media (max-width: 1199px)
+          bottom: 20px
+        @media (max-width: 767px)
+          opacity: 0
+          visibility: hidden
+        .name
+          text-transform: capitalize
+          margin-bottom: 5px
+        .designation
+          color: #b32749
+          text-transform: capitalize
+          margin-bottom: 15px
+        .social-links 
+          +d-flex
+          justify-content: center
+          margin: -5px -10px
+          li 
+            margin: 5px 10px 
+/* investor-section css end */
+
+/* profit-step-section css start */
+.profit-step-section 
+  background-position: top
+.profit-step-area
+  position: relative
+  margin: 50px 50px
+  @media (max-width: 991px)
+    margin-top: 0
+    margin-left: 0
+    margin-right: 0
+  .round-circle 
+    img 
+      width: 100%
+    @media (max-width: 991px)
+      display: none
+  .nav-tabs
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: none
+    @media (max-width: 991px)
+      position: static
+    li
+      position: absolute
+      @media (max-width: 991px)
+        position: static
+        margin: 0!important
+      &:nth-child(1)
+        bottom: -50px
+        left: 50%
+        margin-left: -45px
+        a 
+          background-image: -moz-linear-gradient( 34deg, rgb(76,77,195) 61%, rgb(166,166,225) 89%, rgb(255,255,255) 97%)
+          background-image: -webkit-linear-gradient( 34deg, rgb(76,77,195) 61%, rgb(166,166,225) 89%, rgb(255,255,255) 97%)
+          background-image: -ms-linear-gradient( 34deg, rgb(76,77,195) 61%, rgb(166,166,225) 89%, rgb(255,255,255) 97%)
+      &:nth-child(2)
+        top: 50%
+        left: -50px
+        margin-top: -45px
+        a 
+          background-image: -moz-linear-gradient( 34deg, rgb(135,67,230) 61%, rgb(195,161,243) 89%, rgb(255,255,255) 97%)
+          background-image: -webkit-linear-gradient( 34deg, rgb(135,67,230) 61%, rgb(195,161,243) 89%, rgb(255,255,255) 97%)
+          background-image: -ms-linear-gradient( 34deg, rgb(135,67,230) 61%, rgb(195,161,243) 89%, rgb(255,255,255) 97%)
+      &:nth-child(3)
+        top: -50px
+        left: 50%
+        margin-left: -45px
+        a 
+          background-image: -moz-linear-gradient( 34deg, rgb(239,66,140) 61%, rgb(247,161,198) 89%, rgb(255,255,255) 97%)
+          background-image: -webkit-linear-gradient( 34deg, rgb(239,66,140) 61%, rgb(247,161,198) 89%, rgb(255,255,255) 97%)
+          background-image: -ms-linear-gradient( 34deg, rgb(239,66,140) 61%, rgb(247,161,198) 89%, rgb(255,255,255) 97%)
+      &:nth-child(4)
+        top: 50%
+        right: -50px
+        margin-top: -45px
+        a 
+          background-image: -moz-linear-gradient( 34deg, rgb(96,162,239) 61%, rgb(176,209,247) 89%, rgb(255,255,255) 97%)
+          background-image: -webkit-linear-gradient( 34deg, rgb(96,162,239) 61%, rgb(176,209,247) 89%, rgb(255,255,255) 97%)
+          background-image: -ms-linear-gradient( 34deg, rgb(96,162,239) 61%, rgb(176,209,247) 89%, rgb(255,255,255) 97%)
+      a 
+        width: 90px
+        height: 90px
+        background-color: blue 
+        +border-radius(50%)
+        text-align: center
+        line-height: 90px
+        font-family: $heading-font
+        font-weight: 700
+        font-size: 22px
+        color: #ffffff
+        padding: 18px 17px
+        line-height: 1.3
+        box-shadow: 0px 0px 56px 24px rgba(0, 0, 0, 0.6)
+        text-transform: capitalize
+        border: none
+        @media (max-width: 991px) 
+          +border-radius(5px)
+          box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.25)
+          font-size: 14px
+          width: auto
+          height: auto
+          margin: 5px 10px
+.profit-step-content-wrapper
+  padding-left: 35px
+  @media (max-width: 991px)
+    padding-left: 0
+  .title 
+    text-transform: uppercase
+  .tab-content 
+    margin-top: 32px
+  .profit-step-content
+    .title
+      text-transform: capitalize
+    p 
+      margin-top: 28px
+    ul 
+      margin-top: 38px
+      li 
+        position: relative
+        padding-left: 50px
+        &:nth-last-of-type(3n+3)
+          &::before 
+            border-color: #a22546 
+        &:nth-last-of-type(3n+2)
+          &::before 
+            border-color: #f7a139
+        &:nth-last-of-type(3n+1)
+          &::before 
+            border-color: #3097d1
+        &::before 
+          position: absolute
+          content: ''
+          top: 5px
+          left: 0
+          width: 20px
+          height: 10px
+          border-left: 1px solid red
+          border-bottom: 1px solid red
+          +transform(rotate(-45deg))
+    li+li 
+      margin-top: 23px
+/* profit-step-section css end */
+
+/* profit-calculator-section css start */
+.profit-calculator-section 
+  @media (max-width: 991px)
+    padding-bottom: 90px
+  @media (max-width: 575px)
+    padding-bottom: 80px
+.profit-calculator-wrapper 
+  .title 
+    font-size: 40px
+    margin-bottom: 36px
+    margin-top: -10px
+    @media (max-width: 575px)
+      font-size: 32px
+.profit-calculator-form 
+  .form-row
+    margin-left: -15px
+    margin-right: -15px
+    @media (max-width: 991px)
+      margin-bottom: -15px
+    div[class*="col"]
+      padding-left: 15px
+      padding-right: 15px
+    .form-group 
+      margin-bottom: 25px
+.profit-thumb 
+  text-align: right
+  animation: customBounce 3s linear infinite
+  @media (max-width: 991px)
+    display: none
+/* profit-calculator-section css end */
+
+/* counter-section css start */
+.counter-item
+  +d-flex
+  justify-content: center
+  @media (max-width: 991px)
+    margin-bottom: 30px
+.counter-inner
+  +d-flex
+  justify-content: center
+  align-items: center
+  .icon
+    width: 65px
+    i 
+      font-size: 60px
+  .content
+    width: calc(100% - 65px)
+    padding-left: 20px
+    .counter-number 
+      font-family: $heading-font
+      font-size: 40px
+      font-weight: 700
+      color: #ffffff
+      line-height: 1
+      @media (max-width: 991px)
+        font-size: 32px
+    p 
+      font-size: 20px
+      margin-top: 5px
+      @media (max-width: 991px)
+        font-size: 16px
+.counter-section 
+  div[class*="col"]
+    &:nth-child(1)
+      .counter-item
+        .icon 
+          color: #dd3f85
+    &:nth-child(2)
+      .counter-item
+        .icon 
+          color: #7a3fd3
+    &:nth-child(3)
+      .counter-item
+        .icon 
+          color: #5fa1ee
+/* counter-section css end */
+
+/* latest-transaction-section css start */
+.latest-transaction-section 
+  background-position: top
+  position: relative
+  .ulka-1, .ulka-2, .ulka-3, .ulka-4, .circle, .brand-label
+    position: absolute
+  .ulka-1
+    top: 60px
+    right: 29%
+  .ulka-2
+    top: 20%
+    right: 18%
+  .ulka-3
+    top: 58%
+    right: 8%
+  .ulka-4
+    bottom: 20%
+    left: 10%
+  .circle
+    top: 21%
+    left: 17%
+    animation: rounded 7s linear infinite
+    @media (max-width: 575px)
+      display: none
+  .brand-label
+    top: 24%
+    right: 0
+    @media (max-width: 991px)
+      top: 0
+    @media (max-width: 575px)
+      display: none
+  .nav-tabs 
+    border-bottom: none
+    justify-content: center
+    margin-left: -15px
+    margin-right: -15px
+    a 
+      margin: 10px 15px
+      &.active 
+        +gradient-two
+.transaction-table-area 
+  background-color: $bg-two
+  overflow-x: auto
+.transaction-table 
+  width: 100%
+  +border-radius(10px)
+  overflow: hidden
+  @media (max-width: 767px)
+    width: 690px
+  thead 
+    tr 
+      +gradient-one
+      th 
+        padding: 20px 30px
+        color: #ffffff
+        font-weight: 500
+        text-transform: capitalize
+        font-size: 18px
+        border-right: 1px solid #ffffff
+        &:last-child
+          border: none
+  tbody 
+    tr
+      border-bottom: 1px solid $border-color
+      &:last-child
+        border: none
+      td 
+        padding: 20px 30px
+        border-right: 1px solid $border-color
+        &:last-child
+          border: none
+        span 
+          font-size: 18px
+          @media (max-width: 991px)
+            font-size: 14px
+        .user-details 
+          +d-flex
+          align-items: center
+          .thumb
+            width: 50px
+            height: 50px
+            +border-radius(50%)
+            overflow: hidden
+          .name
+            color: #ffffff
+            font-weight: 500
+            padding-left: 10px
+            text-transform: capitalize
++keyframes(rounded)
+  from 
+    +transform(rotate(0deg))
+  to
+    +transform(rotate(360deg))
+/* latest-transaction-section css end */
+
+/* commission-section css start */
+.commission-section
+  overflow: visible
+.commission-thumb
+  @media (max-width: 991px)
+    margin-bottom: 45px
+  .main-img, img 
+    animation: customBounce 3s linear infinite
+.commission-content
+  padding-left: 30px
+  .title 
+    margin-bottom: 30px
+  .cmn-list 
+    margin-top: 30px
+/* commission-section css end */
+
+/* testimonial-section css start */
+.testimonial-section 
+  position: relative
+  .map-shape 
+    position: absolute
+    top: 150px
+    right: 100px
+.testimonial-content-slider 
+  padding-top: 50px
+  @media (max-width: 1199px)
+    padding-top: 0
+.testimonial-title 
+  text-transform: uppercase
+  @media (max-width: 1199px)
+    font-size: 36px
+  @media (max-width: 991px)
+    margin-bottom: 45px
+  @media (max-width: 575px) 
+    font-size: 28px
+.testimonial-content-item 
+  background-color: $bg-one
+  padding: 90px 40px 40px 40px
+  +border-radius(10px)
+  position: relative
+  &::before 
+    position: absolute
+    content: "\f101"
+    font-family: Flaticon
+    top: 30px
+    left: 40px
+    color: $para-color
+    font-size: 36px
+  p 
+    font-size: 22px
+    font-style: italic
+    @media (max-width: 1199px) 
+      font-size: 18px
+  .client-details 
+    margin-top: 30px
+    .name 
+      text-transform: capitalize
+      margin-bottom: 6px
+    .designation 
+      text-transform: capitalize
+.testimonial-thumb-slider
+  padding-top: 50px
+  .thumb-slide
+    text-align: center
+    &:nth-child(even)
+      margin-top: 100px
+      @media (max-width: 991px)
+        margin-top: 0
+    .thumb-inner
+      display: inline-block
+      width: 85px
+      height: 85px
+      +border-radius(50%)
+      overflow: hidden
+      position: relative
+      @media (max-width: 575px)
+        width: 65px
+        height: 65px
+      img 
+        width: 100%
+    &.slick-current
+      .thumb-inner
+        @media (max-width: 991px)
+          width: 95px
+          height: 95px
+        @media (max-width: 575px) 
+          width: 75px
+          height: 75px
+/* testimonial-section css end */
+
+/* blog-setcion css start */
+.post-single 
+  background-color: $bg-one
+  padding: 30px 30px
+  +border-radius(10px)
+  &:hover 
+    .post-thumb 
+      img 
+        +transform(scale(1.2, 1.2))
+  .post-thumb
+    overflow: hidden
+    a 
+      display: block
+    img 
+      width: 100%
+      +transition(all 0.3s)
+  .post-content 
+    margin-top: 35px
+    .post-title 
+      margin-bottom: 15px
+      a 
+        font-size: 22px
+.post-tags 
+  margin-bottom: 15px
+  margin-left: -10px
+  margin-right: -10px
+  +d-flex
+  li
+    margin-left: 10px
+    margin-right: 10px
+    a 
+      text-transform: uppercase
+      font-size: 14px
+.d-pagination 
+  margin-top: 50px
+  .pagination
+    margin: -5px
+    li 
+      margin: 5px 5px
+      &.active 
+        a 
+          +gradient-one
+          color: #ffffff
+          &:hover 
+            background-color: $base-color
+            color: #ffffff
+      a 
+        +border-radius(50%!important)
+        color: $para-color
+        background-color: $bg-one
+        font-weight: 500
+        width: 45px
+        height: 45px
+        text-align: center
+        line-height: 28px
+        border: none
+        &:hover 
+          color: $base-color
+          background-color: $bg-one
+/* blog-setcion css end */
+
+/* blog-details-setcion css start */
+.blog-details-area 
+  background-color: $bg-one
+  padding: 30px 30px
+  +border-radius(8px)
+  .blog-details-thumb 
+    margin-bottom: 30px
+.blog-details-content 
+  .blog-details-title 
+  p 
+    margin-top: 20px
+  blockquote
+    margin-top: 20px 
+    margin-bottom: 25px
+    padding: 0
+    p  
+      margin-top: 0
+      font-size: 18px
+      font-weight: 500
+  .inner-title 
+    margin-top: 20px
+  .row 
+    .inner-title 
+      margin-top: 0
+  .cmn-list
+    +d-flex
+    margin-right: -15px
+    li 
+      width: 50%
+      padding-right: 15px
+      @media (max-width: 575px)
+        width: 100%
+    li+li 
+      margin-top: 10px
+  .inner-thumb
+    @media (max-width: 991px)
+      margin-bottom: 20px
+.blog-details-footer 
+  margin-top: 40px
+  +d-flex
+  justify-content: space-between
+  .share-caption
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 5px
+  .share-post-links 
+    +d-flex
+    align-items: center
+    margin: -5px -7px
+    li 
+      margin: 5px 7px
+      a 
+        padding: 6px 15px
+        color: #ffffff
+        font-size: 14px
+        text-transform: uppercase
+        font-weight: 700
+        +border-radius(5px)
+        &.twitter
+          background-color: #55acee
+        &.facebook
+          background-color: #3b5998
+        i 
+          margin-right: 7px
+.reply-btn 
+  padding: 5px 20px
+  background-color: #55acee
+  color: #ffffff
+  +border-radius(3px)
+  font-size: 14px
+  float: right
+  margin-top: -30px
+  &:hover 
+    color: #ffffff
+.comments-area 
+  margin-top: 50px
+  background-color: $bg-one
+  padding: 30px 30px
+  +border-radius(8px)
+  .title 
+    text-transform: capitalize
+    margin-bottom: 30px
+.comments-list 
+  .single-comment
+    display: flex
+    flex-wrap: wrap
+    padding: 20px 0
+    &:first-child
+      padding-top: 0
+    &:last-child 
+      padding-bottom: 0
+    .thumb 
+      +flexWidth(80px)
+      height: 80px
+      +border-radius(50%)
+      overflow: hidden
+    .content 
+      +flexWidth(calc(100% - 80px))
+      padding-left: 20px
+      @media (max-width: 480px)
+        +flexWidth(100%)
+        padding-left: 0
+        margin-top: 15px
+      .name
+        text-transform: capitalize
+      .date
+        font-size: 14px
+      p 
+        margin-top: 5px
+
+.comment-form-area 
+  margin-top: 50px
+  background-color: $bg-one
+  padding: 30px 30px
+  +border-radius(8px)
+  .title 
+    margin-bottom: 30px
+  .comment-form 
+    .form-group 
+      margin-bottom: 30px
+    input, textarea, button 
+      +border-radius(5px)
+      border-color: rgba(#ffffff, 0.1)
+      &:focus 
+        border-color: $base-color
+    .submit-btn 
+      text-transform: none
+
+/* blog-details-setcion css end */
+
+/* mission-vission-section css start */
+.mission-vission-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.mission-vission-content 
+  .title 
+    margin-bottom: 30px
+    text-transform: uppercase
+    font-size: 40px
+  .mission-vission-content-area 
+    .row 
+      margin-top: 40px
+.mission-vission-single 
+  .mv-title 
+    margin-bottom: 15px
+    text-transform: capitalize
+.mission-vission-tab-area 
+  .nav-tabs 
+    border: none
+    margin-left: -15px
+    margin-right: -15px
+    margin-bottom: 30px
+    li 
+      margin: 5px 15px
+      a 
+        padding: 12px 35px
+        border: 1px solid $border-color
+        +border-radius(5px)
+        text-transform: uppercase
+        font-weight: 500
+        &:hover 
+          color: #ffffff
+        &.active 
+          +gradient-one
+          border-color: #319cd7
+          color: #ffffff
+/* mission-vission-section css end */
+
+/* contact-section css start */
+.contact-info-single 
+  background-color: $bg-one
+  padding: 0 30px 30px 30px
+  text-align: center!important
+  +border-radius(5px)
+  @media (max-width: 991px)
+    +border-radius(5px!important)
+  .icon
+    width: 73px
+    height: 105px
+    margin-left: auto 
+    margin-right: auto
+    background-color: rgb(96, 162, 239)
+    line-height: 120px
+    text-align: center
+    +border-radius(0 0 45px 45px)
+    i 
+      color: #ffffff
+      font-size: 46px
+      margin-left: 5px
+  .title
+    margin-top: 30px
+    margin-bottom: 20px
+
+div[class*="col"]:nth-of-type(3n + 1)
+  .contact-info-single
+    +border-radius(999px 0 0 999px)
+    padding-left: 60px
+    .icon 
+      background-color: #60a2ef
+div[class*="col"]:nth-of-type(3n + 2)
+  .contact-info-single
+    .icon
+      background-color: #8743e6
+div[class*="col"]:nth-of-type(3n + 3)
+  .contact-info-single
+    +border-radius(0 999px 999px 0)
+    .icon
+      background-color: #ef428c
+.contact-thumb
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.contact-fom-area
+  .sub-title 
+    color: #ffffff
+    margin-bottom: 10px
+  .title
+    font-size: 30px
+    margin-bottom: 45px
+
+.contact-form 
+  input, textarea 
+    border-color: rgba(#ffffff, 0.1)
+    &:focus 
+      border-color: $base-color
+.call-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.call-content 
+  .title 
+    text-transform: uppercase
+    margin-bottom: 20px
+    @media (max-width: 767px)
+      margin-bottom: 10px
+  .emergency-number 
+    color: $base-color
+    font-family: $heading-font
+    font-weight: 700
+    font-size: 60px
+    @media (max-width: 767px)
+      font-size: 48px
+    @media (max-width: 575px)
+      font-size: 32px
+  .subscribe-from
+    +d-flex
+    margin-top: 30px
+    margin-bottom: 40px
+    input
+      width: calc(100% - 75px)
+      border-color: rgba(#ffffff, 0.1)
+      height: 60px
+      +border-radius(5px 0 0 5px)
+    button
+      width: 75px
+      background-color: transparent
+      border: 1px solid rgba(#ffffff, 0.1)
+      color: $base-color
+      border-left: none
+      +border-radius(0 5px 5px 0)
+      font-size: 24px
+  .follow-caption 
+    text-transform: uppercase
+    margin-bottom: 30px
+  .follow-links-list 
+    +d-flex
+    margin: -5px -10px
+    li 
+      margin: 5px 10px
+      a
+        width: 60px
+        height: 60px
+        +border-radius(50%)
+        color: #ffffff
+        background-color: $base-color
+        text-align: center
+        line-height: 60px
+        font-size: 24px
+        @media (max-width: 767px)
+          width: 45px
+          height: 45px
+          line-height: 45px
+          font-size: 18px
+        &.facebook
+          background-color: #4267b2
+        &.twitter
+          background-color: #1da1f3
+        &.instagram
+          background-color: #a456e4
+        &.linkedin
+          background-color: #1da1f3
+
+// #map
+//   height: 450px
+/* contact-section css end*/
+
+/* privacy-section css start */
+.privacy-content
+  padding: 30px 30px 
+  background-color: $bg-one
+  .title 
+  p 
+    margin-top: 20px
+/* privacy-section css end */
+
+/* terms-section css start */
+.terms-wrapper
+  .title 
+  p 
+    margin-top: 20px
+  a 
+    color: $base-color
+/* terms-section css end */
+
+/* faq-section css start */ 
+.faq-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.faq-wrapper 
+  .title 
+    text-transform: uppercase
+    margin-bottom: 45px
+/* faq-section css end */ 
+
+/* question-section css start */
+.question-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.question-form-wrapper 
+  .title 
+    text-transform: uppercase
+    margin-bottom: 45px
+.question-form
+  input, textarea 
+    border-color: rgba(#ffffff, 0.1)
+    &:focus 
+      border-color: $base-color
+/* question-section css end */
+
+/* login-section css start */
+.login-section 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 9999999
+  padding: 150px
+  opacity: 0
+  visibility: hidden
+  overflow: auto
+  +transition(all 0.3s)
+  @media (max-width: 1450px)
+    padding: 100px
+  @media (max-width: 1250px)
+    padding: 50px
+  @media (max-width: 575px)
+    padding: 0
+  &.active
+    opacity: 1
+    visibility: visible
+    transition-delay: 1s ease-out
+    &::before 
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)
+      -webkit-transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      transition-delay: 0.5s
+    .login-area
+      opacity: 1
+      -webkit-transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      transition-delay: 1s
+      top: 0
+  &.duration
+    opacity: 0
+    visibility: hidden
+    transition-delay: 1.5s
+    &::before
+      -webkit-transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      -webkit-transform: scaleX(0)
+      transform: scaleX(0)
+      -webkit-transform-origin: 0 50%
+      transform-origin: 0 50%
+      -webkit-transition-property: transform
+      transition-property: transform
+      transition-duration: 1s
+    .login-area
+      -webkit-transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      opacity: 0
+      top: 100px
+      transition-duration: 0.5s
+  &::before 
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #0f1932
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transform-origin: 0 50%
+    transform-origin: 0 50%
+    -webkit-transition-property: transform
+    transition-property: transform
+    -webkit-transition-duration: 0.5s
+    transition-duration: 1s
+    @media (max-width: 991px)
+      position: fixed
+.login-area 
+  background-color: #0a1227
+  padding: 50px 150px
+  position: relative
+  overflow: hidden
+  background-position: bottom
+  opacity: 0
+  top: 100px
+  transition-duration: 0.7s
+  @media (max-width: 1450px)
+    padding: 50px 100px
+  @media (max-width: 1450px)
+    padding: 50px
+  @media (max-width: 575px)
+    padding: 30px
+  .login-close 
+    width: inherit
+    text-align: center
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 9
+    width: 50px
+    height: 50px
+    &::before, &::after 
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: inherit;
+      background-color: #ffffff;
+      left: 0;
+      transition: all .3s ease-in;
+    &::before 
+      top: 50%; 
+      transform: rotate(45deg); 
+    &::after 
+      bottom: 50%;
+      transform: rotate(-45deg); 
+    &:hover 
+      label 
+        opacity: 1
+      &::before
+        top: 0
+      &::after 
+        bottom: 0
+      &::before, &::after 
+        transform: rotate(0);
+    label
+      font-size: .8em; 
+      line-height: 4em;
+      text-transform: uppercase;
+      color: black;
+      transition: all .3s ease-in;
+      opacity: 0;
+      cursor: pointer;
+      color: #ffffff
+  .login-bg-shape 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+.login-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.login-form-wrapper 
+  background-color: #845dec
+  padding: 50px 50px
+  +border-radius(10px)
+  @media (max-width: 575px)
+    padding: 30px
+  .title 
+    font-size: 30px
+    text-transform: capitalize
+    margin-bottom: 30px
+  .login-form 
+    input 
+      border: none
+      background-color: #ffffff
+      +placeholder(#777777)
+  .create-account 
+    color: #ffffff
+    margin-top: 10px
+    background-color: transparent
+    padding: 0
+    text-align: left
+.custom-form-check
+  input 
+    display: none
+    cursor: pointer
+    &:checked + label 
+      background-color: #ffffff
+  label
+    -webkit-appearance: none
+    background-color: transparent
+    border: 1px solid #ffffff
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05)
+    padding: 5px
+    +border-radius(50%)
+    display: inline-block
+    position: relative
+    vertical-align: middle
+    cursor: pointer
+    margin-bottom: 0
+  .label-text
+    cursor: pointer
+    vertical-align: middle
+    padding-left: 10px
+    margin-left: -5px
+    color: #ffffff
+    font-size: 14px
+/* login-section css end */
+
+/* signup-section css start */
+.signup-section 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 9999999
+  padding: 150px
+  opacity: 0
+  visibility: hidden
+  overflow: auto
+  +transition(all 0.3s)
+  @media (max-width: 1450px)
+    padding: 100px
+  @media (max-width: 1250px)
+    padding: 50px
+  @media (max-width: 575px)
+    padding: 0
+  &.active
+    opacity: 1
+    visibility: visible
+    transition-delay: 1s ease-out
+    &::before 
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)
+      -webkit-transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      transition-delay: 0.5s
+    .signup-area
+      opacity: 1
+      -webkit-transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      transition-delay: 1s
+      top: 50%
+      transform: translateY(-50%)
+      @media (max-width: 991px)
+        top: 0
+        transform: translateY(0)
+  &.duration
+    opacity: 0
+    visibility: hidden
+    transition-delay: 1.5s
+    &::before
+      -webkit-transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      transition-timing-function: cubic-bezier(.86,.27,.17,.81)
+      -webkit-transform: scaleX(0)
+      transform: scaleX(0)
+      -webkit-transform-origin: 0 50%
+      transform-origin: 0 50%
+      -webkit-transition-property: transform
+      transition-property: transform
+      transition-duration: 1s
+    .signup-area
+      -webkit-transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      transition-timing-function: cubic-bezier(.9,.25,.08,.76)
+      opacity: 0
+      top: 50%
+      transform: translateY(-50%)
+      transition-duration: 0.5s
+  &::before 
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #0f1932
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transform-origin: 0 50%
+    transform-origin: 0 50%
+    -webkit-transition-property: transform
+    transition-property: transform
+    -webkit-transition-duration: 0.5s
+    transition-duration: 1s
+    @media (max-width: 991px)
+      position: fixed
+.signup-area 
+  background-color: #0a1227
+  padding: 50px 150px
+  position: relative
+  overflow: hidden
+  background-position: bottom
+  opacity: 0
+  top: 100px
+  transition-duration: 0.7s
+  top: 50%
+  transform: translateY(-50%)
+  @media (max-width: 1450px)
+    padding: 50px 100px
+  @media (max-width: 1450px)
+    padding: 50px
+  @media (max-width: 575px)
+    padding: 30px
+  .signup-close 
+    width: inherit
+    text-align: center
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 9
+    width: 50px
+    height: 50px
+    &::before, &::after 
+      position: absolute
+      content: ''
+      height: 2px
+      width: inherit
+      background-color: #ffffff
+      left: 0;
+      transition: all .3s ease-in
+    &::before 
+      top: 50%
+      transform: rotate(45deg)
+    &::after 
+      bottom: 50%
+      transform: rotate(-45deg)
+    &:hover 
+      label 
+        opacity: 1
+      &::before
+        top: 0
+      &::after 
+        bottom: 0
+      &::before, &::after 
+        transform: rotate(0)
+    label
+      font-size: .8em
+      line-height: 4em
+      text-transform: uppercase
+      color: black
+      transition: all .3s ease-in
+      opacity: 0
+      cursor: pointer
+      color: #ffffff
+  .signup-bg-shape 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+.signup-thumb 
+  @media (max-width: 991px)
+    margin-bottom: 45px
+.signup-form-wrapper 
+  background-color: #845dec
+  padding: 50px 50px
+  +border-radius(10px)
+  .title 
+    font-size: 30px
+    text-transform: capitalize
+    margin-bottom: 30px
+  .signup-form 
+    input 
+      border: none
+      background-color: #ffffff
+      +placeholder(#777777)
+  .login-account 
+    color: #ffffff
+    margin-top: 10px
+    background-color: transparent
+    padding: 0
+    text-align: left
+/* signup-section css end */
+
+/* error-page-section css start */ 
+.error-page-section 
+  position: relative
+  text-align: center
+  .shape 
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+  .content
+    margin-bottom: -155px
+    @media (max-width: 575px)
+      margin-bottom: -120px
+    @media (max-width: 450px)
+      margin-bottom: -100px
+    @media (max-width: 380px)
+      margin-bottom: -80px
+    .error-text
+      font-family: $heading-font
+      font-weight: 700
+      font-size: 120px
+      color: #ef428c
+      display: block
+      line-height: 1
+      @media (max-width: 575px)
+        font-size: 85px
+    .error-title 
+      font-size: 34px
+      text-transform: uppercase
+      color: #ffffff
+      @media (max-width: 575px)
+        font-size: 20px
+  .thumb 
+    position: relative
+    z-index: 1
+  .btn-area
+    margin-top: 30px
+/* error-page-section css end */
+
+/* user-panel-section css start */ 
+.user-panel-sidebar 
+  background-color: $bg-one
+  padding: 20px 20px
+  +border-radius(5px)
+  @media (max-width: 991px)
+    display: none
+  li+li 
+    border-top: 1px solid rgba(#ffffff, 0.1)
+  li 
+    &.active 
+      a 
+        color: #900cec
+    a 
+      padding: 10px 0
+      text-transform: capitalize
+      &:hover 
+        color: #900cec
+.user-panel-sidebar-btn 
+  color: #ffffff
+  font-size: 18px
+  padding: 12px 30px
+  background-color: $bg-one
+  +border-radius(5px)
+  cursor: pointer
+  display: none
+  @media (max-width: 991px)
+    display: inline-block
+  i 
+    margin-left: 10px
+.user-panel-wrapper
+  padding-left: 30px
+  @media (max-width: 991px)
+    margin-top: 50px
+    padding-left: 0
+  .user-info-area
+    padding: 40px 40px
+    background-color: $bg-one
+    +border-radius(5px)
+    +d-flex
+    .user-info-header
+      width: 100%
+      @media (max-width: 767px)
+        margin-top: -20px
+        margin-bottom: 0
+      .action-list
+        margin: -5px -10px
+        text-align: right
+        li 
+          display: inline-block
+          margin: 5px 10px
+          font-size: 18px
+    .user-thumb
+      width: 135px
+      height: 135px
+      +border-radius(50%)
+      overflow: hidden
+      @media (max-width: 575px)
+        margin: 0 auto
+    .user-content
+      padding-left: 30px
+      width: calc(100% - 135px)
+      @media (max-width: 575px)
+        width: 100%
+        padding-left: 0 
+        text-align: center
+        margin-top: 30px
+      .user-name 
+        margin-bottom: 15px
+  .statitics-item-area 
+    margin-top: 50px
+    .statitics-item
+      background-color: $bg-one
+      text-align: center
+      padding-top: 50px
+      min-height: 275px
+      position: relative
+      +border-radius(8px)
+      overflow: hidden
+      .title
+        text-transform: capitalize
+        font-size: 18px
+      .stat-amount
+        font-weight: 700
+        color: $base-color
+        font-size: 30px
+        &.color-1 
+          color: #900cec 
+        &.color-2 
+          color: #065dc0
+        &.color-3  
+          color: #ef428c
+      .item-shape-1 
+        width: 100%
+        min-height: 140px
+        position: absolute
+        left: 0
+        bottom: 0
+        clip-path: polygon(82% 29%, 100% 0, 100% 100%, 0 100%, 0 0, 27% 57%, 51% 16%)
+        background-image: -moz-linear-gradient( 41deg, rgb(144,12,236) 0%, rgb(143,40,242) 76%, rgb(141,68,248) 100%)
+        background-image: -webkit-linear-gradient( 41deg, rgb(144,12,236) 0%, rgb(143,40,242) 76%, rgb(141,68,248) 100%)
+        background-image: -ms-linear-gradient( 41deg, rgb(144,12,236) 0%, rgb(143,40,242) 76%, rgb(141,68,248) 100%)
+        z-index: 9
+      .item-shape-2
+        width: 100%
+        min-height: 140px
+        position: absolute
+        left: 0
+        bottom: 0
+        clip-path: polygon(80% 37%, 100% 19%, 100% 100%, 0 100%, 0 0, 34% 42%, 57% 16%)
+        background-image: -moz-linear-gradient( 41deg, rgb(4,90,190) 0%, rgb(22,121,207) 76%, rgb(39,152,223) 100%)
+        background-image: -webkit-linear-gradient( 41deg, rgb(4,90,190) 0%, rgb(22,121,207) 76%, rgb(39,152,223) 100%)
+        background-image: -ms-linear-gradient( 41deg, rgb(4,90,190) 0%, rgb(22,121,207) 76%, rgb(39,152,223) 100%)
+        z-index: 9
+      .item-shape-3
+        width: 100%
+        min-height: 140px
+        position: absolute
+        left: 0
+        bottom: 0
+        clip-path: polygon(76% 29%, 100% 19%, 100% 100%, 0 100%, 0 61%, 19% 27%, 51% 66%)
+        background-image: -moz-linear-gradient( 41deg, rgb(239,66,140) 0%, rgb(247,84,154) 76%, rgb(255,101,167) 100%)
+        background-image: -webkit-linear-gradient( 41deg, rgb(239,66,140) 0%, rgb(247,84,154) 76%, rgb(255,101,167) 100%)
+        background-image: -ms-linear-gradient( 41deg, rgb(239,66,140) 0%, rgb(247,84,154) 76%, rgb(255,101,167) 100%)
+        z-index: 9
+
+  .revenue-statistics-area
+    margin-top: 50px
+    .title 
+      text-transform: capitalize
+    .revenue-statistics-chart-area
+      margin-top: 30px
+      padding: 30px 30px 
+      background-color: $bg-one
+      +border-radius(5px)
+    .revenue-statistics-chart-header 
+      +d-flex
+      justify-content: space-between
+      .view-list-menu 
+        margin: 0 -10px
+        li 
+          display: inline-block
+          margin: 0 10px
+          a 
+            text-transform: capitalize
+  .revenue-statistics-chart 
+    margin-top: 20px
+  .last-deposit-area 
+    margin-top: 50px
+    overflow: auto
+    table 
+      background-color: $bg-one
+      +border-radius(8px)
+      overflow: hidden
+      @meida (max-width: 767px)
+        width: 690px
+    .last-deposit-header 
+      +d-flex
+      justify-content: space-between
+      margin-bottom: 30px
+      .title 
+        text-transform: capitalize
+      select 
+        background-color: #8542e7
+        color: #ffffff
+        width: 90px
+        font-size: 13px
+        height: 30px
+        padding: 5px 10px
+        +border-radius(999px)
+/* user-panel-section css end */
+
+/* preloader css start */
+.preloader 
+  position: fixed
+  top: 0px
+  left: 0px
+  right: 0px
+  bottom: 0px
+  background: $bg-one
+  z-index: 99999999999
+  .preloader-box
+    position: absolute
+    width: 345px
+    height: 30px
+    top: 50%
+    left: 50%
+    margin: -15px 0 0 -150px
+    -webkit-perspective: 200px
+    div
+      position: relative
+      width: 30px
+      height: 30px
+      background: #CCC
+      float: left
+      text-align: center
+      line-height: 30px
+      font-family: Verdana
+      font-size: 20px
+      color: #FFF
+      &:nth-child(1)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 0ms infinite alternate
+      &:nth-child(2)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 75ms infinite alternate
+      &:nth-child(3)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 150ms infinite alternate
+      &:nth-child(4)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 225ms infinite alternate
+      &:nth-child(5)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 300ms infinite alternate
+      &:nth-child(6)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 375ms infinite alternate
+      &:nth-child(7)
+        background: $base-color
+        margin-right: 15px
+        -webkit-animation: movement 600ms ease 450ms infinite alternate
+      &:nth-child(8)
+        background: $base-color
+        -webkit-animation: movement 600ms ease 525ms infinite alternate
+
++keyframes(movement)
+  from 
+    -webkit-transform: scale(1.0) translateY(0px) rotateX(0deg)
+    box-shadow: 0 0 0 rgba(0,0,0,0)
+
+  to 
+    -webkit-transform: scale(1.5) translateY(-25px) rotateX(45deg)
+    box-shadow: 0 25px 40px rgba(0,0,0,0.4)
+    background: #4c4dc3
+/* preloader css end */

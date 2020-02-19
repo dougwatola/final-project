@@ -1,0 +1,311 @@
+@import ./_reset
+/* global css strat */
+
+// margin global css 
+.mb-30
+  margin-bottom: 30px
+.mt-30 
+  margin-top: 30px
+.mt-40 
+  margin-top: 40px
+.mt-50 
+  margin-top: 50px
+.mt-80 
+  margin-top: 80px
+.mb-50 
+  margin-bottom: 50px
+.mb-none-30
+  margin-bottom: -30px
+.mb-none-50
+  margin-bottom: -50px
+
+// padding global css
+.pt-90
+  padding-top: 90px
+.pb-90
+  padding-bottom: 90px
+.pb-120 
+  padding-bottom: 120px
+.pt-150 
+  padding-top: 150px
+  @media (max-width: 1199px)
+    padding-top: 120px
+  @media (max-width: 991px)
+    padding-top: 90px
+  @media (max-width: 575px)
+    padding-top: 80px
+.pb-150 
+  padding-bottom: 150px
+  @media (max-width: 1199px)
+    padding-bottom: 120px
+  @media (max-width: 991px)
+    padding-bottom: 90px
+  @media (max-width: 575px)
+    padding-bottom: 80px
+
+.bg_img 
+  background-size: cover
+  background-position: center
+select 
+  option 
+    background-color: $bg-two
+label 
+  color: #ffffff
+  margin-bottom: 13px
+input 
+  min-height: 50px
+  +border-radius(3px)
+.nice-select
+  width: 100%
+  min-height: 50px
+  line-height: 50px
+  +border-radius(3px)
+  .list 
+    width: 100%
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,0.15)
+.section-bg
+  background-color: $bg-one
+.section-bg-two 
+  background-color: $bg-two
+.section-sub-title 
+  font-size: 20px
+  font-family: $para-font
+  color: $base-color
+  text-transform: capitalize
+  @media (max-width: 767px)
+    font-size: 18px
+.section-title 
+  font-size: 50px
+  text-transform: uppercase
+  text-align: center
+  @media (max-width: 1199px)
+    font-size: 40px
+  @media (max-width: 991px)
+    font-size: 36px
+  @media (max-width: 575px)
+    font-size: 28px
+.section-header
+  margin-bottom: 70px
+  margin-top: -15px
+  @media (max-width: 991px)
+    margin-bottom: 50px
+  p 
+    margin-top: 17px
+.border-radius-100 
+  +border-radius(50%!important)
+.video-button
+  width: 105px
+  height: 105px
+  color: #ffffff
+  +border-radius(50%)
+  display: inline-block
+  background-color: $base-color
+  text-align: center
+  line-height: 125px
+  +animation(pulse 2000ms linear infinite)
+  &::before, &::after 
+    position: absolute
+    content: ""
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    border-radius: 74px
+    background-color: $base-color
+    opacity: 0.15
+    z-index: -10
+  &::before
+    z-index: -10
+    +animation(inner-ripple 2000ms linear infinite)
+  &::after
+    z-index: -10
+    +animation(outer-ripple 2000ms linear infinite)
+  i 
+    margin-left: 10px
+    font-size: 36px
++keyframes(outer-ripple)
+  0%
+    +transform(scale(1))
+    opacity: 0.5
+  80%
+    +transform(scale(1.5))
+    opacity: 0
+  100%
+    +transform(scale(2.5))
+    opacity: 0
+
++keyframes(inner-ripple)
+  0%
+    +transform(scale(1))
+    opacity: 0.5
+  30%
+    +transform(scale(1))
+    opacity: 0.5
+  100%
+    +transform(scale(1.5))
+    opacity: 0
+
+.d-pagination 
+  margin-top: 50px
+  .pagination
+    margin: -5px
+    li 
+      margin: 5px 5px
+      &.active 
+        a 
+          background-color: $base-color
+          color: #ffffff
+          &:hover 
+            background-color: $base-color
+            color: #ffffff
+      a 
+        +border-radius(50%!important)
+        color: $para-color
+        font-weight: 500
+        width: 45px
+        height: 45px
+        border: 1px solid #e\5e5e5
+        text-align: center
+        line-height: 28px
+        &:hover 
+          color: $base-color
+          background-color: transparent
+          border-color: $base-color
+.cmn-list
+  margin-top: 25px
+  li+li 
+    margin-top: 20px
+  li 
+    position: relative
+    padding-left: 45px
+    &:nth-last-of-type(3n+3)
+      &::before 
+        border-color: #a22546 
+    &:nth-last-of-type(3n+2)
+      &::before 
+        border-color: #f7a139
+    &:nth-last-of-type(3n+1)
+      &::before 
+        border-color: #3097d1
+    &::before 
+      position: absolute
+      content: ''
+      top: 5px
+      left: 0
+      width: 20px
+      height: 10px
+      border-left: 1px solid red
+      border-bottom: 1px solid red
+      +transform(rotate(-45deg))
+.cmn-accordion 
+  .card+.card 
+    margin-top: 15px
+  .card 
+    border: none
+    background-color: transparent
+    +border-radius(0)
+  .card-header 
+    background-color: transparent
+    padding: 0
+    margin-bottom: 0!important
+    border: 1px solid rgba(#ffffff, 0.1)
+    +border-radius(5px!important)
+    .acc-btn
+      display: block
+      width: 100%
+      justify-content: space-between
+      background-color: transparent 
+      cursor: pointer
+      position: relative
+      text-align: left
+      padding-right: 50px
+      &:focus 
+        outline: none
+      &.collapsed 
+        .plus-icon 
+          &::after 
+            +transform(translate(-50%, -50%) rotate(0deg))
+      .text 
+        font-weight: 500
+        font-size: 18px
+        padding: 10px
+        @media (max-width: 991px)
+          font-size: 18px
+        @media (max-width: 575px)
+          font-size: 15px
+      .plus-icon 
+        position: absolute
+        width: 70px
+        right: 0
+        top: 0
+        height: 100%
+        border-left: 1px solid rgba(#ffffff, 0.1)
+        &::before 
+          position: absolute
+          content: ''
+          top: 50%
+          left: 50%
+          width: 15px
+          height: 2px
+          background-color: $para-color
+          +transform(translate(-50%, -50%))
+        &::after 
+          position: absolute
+          content: ''
+          top: 50%
+          left: 50%
+          height: 15px
+          width: 2px
+          background-color: $para-color
+          +transform(translate(-50%, -50%) rotate(90deg))
+          +transition(all 0.3s)
+  .card-body 
+    padding: 20px 20px
+
+.nav[role="tablist"]
+  li
+    margin: 5px 10px
+    a 
+      padding: 10px 35px 
+      border: 1px solid rgba(#ffffff, 0.1)
+      color: $para-color
+      text-transform: capitalize
+      +border-radius(5px)
+      font-weight: 600
+      @media (max-width: 575px)
+        padding: 10px 20px
+        font-size: 14px
+      &.active 
+        background-color: $base-color
+        border-color: $base-color
+        color: $heading-color!important
+blockquote
+
+input:focus,
+textarea:focus,
+.nice-select.open
+  border-color: $base-color
+
+.page-breadcrumb 
+  +d-flex
+  margin-top: 15px
+  li
+    color: #ffffff
+    text-transform: capitalize
+    &::after 
+      content: '-'
+      color: #ffffff
+      margin: 0 5px
+    &:first-child
+      &::before 
+        content: "\f102"
+        font-family: 'Flaticon'
+        color: #ef428c
+        margin-right: 6px
+    &:last-child
+      &::after 
+        display: none
+    a
+      color: #ffffff
+      text-transform: capitalize
+/* global css end */ 
