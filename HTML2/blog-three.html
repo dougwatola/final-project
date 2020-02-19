@@ -1,0 +1,533 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>QueenBee Productions and Analytics</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/animate.css">
+  <link rel="stylesheet" href="assets/css/vendor/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- preloader start -->
+  <div class="preloader">
+    <div class="preloader-box">
+      <div>L</div>
+      <div>O</div>
+      <div>A</div>
+      <div>D</div>
+      <div>I</div>
+      <div>N</div>
+      <div>G</div>
+    </div>
+  </div>
+  <!-- preloader end -->
+<div class="dark-version">
+  <!-- header section  -->
+  <!-- header-section start  -->
+  <header class="header-section">
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl p-0 align-items-center">
+          <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png" alt="site-logo"><span class="logo-icon"><i class="flaticon-fire"></i></span></a>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="menu-toggle"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav main-menu ml-auto">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Did You Know?</a></li>
+              <li class="menu_has_children"><a href="#0">Picture it!</a>
+                <ul class="sub-menu">
+                  <li><a href="blog-three.html">Visualize</a></li>
+                </ul>
+              </li>
+              <li class="menu_has_children">
+                <a href="#0">Nerd out</a>
+                <ul class="sub-menu">
+                  <li><a href="user-panel.html">Machine Learning</a></li>
+                </ul>
+              </li>
+              <li class="menu_has_children"><a href="#0">pages</a>
+                <ul class="sub-menu">
+                  <li><a href="privacy.html">More Reading</a></li>
+                  <li><a href="terms.html">Sources</a></li>
+                  <li><a href="faq.html">Questions</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">contact us</a></li>
+            </ul>
+            <div class="nav-right">
+              <button class="cmn-btn login-open-btn">login</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+<!-- header-section end  -->
+
+<!-- login-section start -->
+<div class="login-section">
+  <div class="login-area">
+    <div class="login-close">
+      <label>Close</label>
+    </div>
+    <div class="login-bg-shape bg_img" data-background="assets/images/elements/login-shape.png"></div>
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <div class="login-thumb"><img src="assets/images/elements/login.png" alt="image"></div>
+      </div>
+      <div class="col-lg-5">
+        <div class="login-form-wrapper">
+          <h3 class="title">sign in your account</h3>
+          <form class="login-form">
+            <div class="form-group">
+              <input type="email" name="login_email" id="login_email" placeholder="Email or User Name">
+            </div>
+            <div class="form-group">
+              <input type="password" name="login_pass" id="login_pass" placeholder="Password">
+            </div>
+            <div class="form-check-inline custom-form-check">
+              <input id="remember" type="radio" name="custom-radio-btn">
+              <label class="custom-radio" for="remember"></label>
+              <span class="label-text">Remember me</span>
+            </div>
+            <div class="form-check-inline custom-form-check">
+              <input id="forget" type="radio" name="custom-radio-btn">
+              <label class="custom-radio" for="forget"></label>
+              <span class="label-text">Forget Password?</span>
+            </div>
+            <div class="form-group mt-30">
+              <button type="submit" class="cmn-btn">sign in now</button>
+            </div>
+          </form>
+          <button class="create-account signup-open-btn">Don`t have on account yet? <br>Create account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- login-section end -->
+
+<!-- signup-section start -->
+<div class="signup-section">
+  <div class="signup-area">
+    <div class="signup-close">
+      <label>Close</label>
+    </div>
+    <div class="signup-bg-shape bg_img" data-background="assets/images/elements/login-shape.png"></div>
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-5 order-lg-1 order-2">
+        <div class="signup-form-wrapper">
+          <h3 class="title">sign in your account</h3>
+          <form class="signup-form">
+            <div class="form-group">
+              <input type="email" name="signup_email" id="signup_email" placeholder="Email or User Name">
+            </div>
+            <div class="form-group">
+              <input type="password" name="signup_pass" id="signup_pass" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="password" name="signup_re-pass" id="signup_re-pass" placeholder="Re-Password">
+            </div>
+            <div class="form-check-inline custom-form-check">
+              <input id="agree" type="radio" name="custom-radio-btn">
+              <label class="custom-radio" for="agree"></label>
+              <span class="label-text">I agree with all Terms & Conditions</span>
+            </div>
+            <div class="form-group mt-30">
+              <button type="submit" class="cmn-btn">Registration</button>
+            </div>
+          </form>
+          <button class="login-account switch-login-page-btn">Already you have  an account in here? <br>Sign in</button>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1">
+        <div class="signup-thumb"><img src="assets/images/elements/signup.png" alt="image"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signup-section end -->
+
+  <!-- inner-hero-section start -->
+  <section class="inner-hero-section bg_img" data-background="assets/images/elements/inner-hero-bg.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="inner-hero-content">
+            <h2 class="title">Our Wicked Awesome Visualizations</h2>
+            <ol class="page-breadcrumb">
+              <li><a href="index.html">home</a></li>
+              <li>We nerd out on this shiznit, but want you to love it too. Please send us your feedback! </li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="inner-hero-thumb">
+            <div class="mobile"><img src="assets/images/elements/inner-hero-mobile.png" alt="image"></div>
+            <div class="chart"><img src="assets/images/elements/inner-hero-chart.png" alt="image"></div>
+            <div class="bar-1"><img src="assets/images/elements/inner-hero-bar-1.png" alt="image"></div>
+            <div class="bar-2"><img src="assets/images/elements/inner-hero-bar-2.png" alt="image"></div>
+            <div class="bar-3"><img src="assets/images/elements/inner-hero-bar-3.png" alt="image"></div>
+            <div class="coin"><img src="assets/images/elements/inner-hero-coin.png" alt="image"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- inner-hero-section end -->
+
+  <!-- blog-setcion start -->
+  <section class="blog-section pt-150 pb-150 section-bg-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row mb-none-50">
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">Your Personalized DashBoard</a></li>
+                  <li><a href="#0">11 jun 2019</a></li>
+                </ul>
+                <div class='tableauPlaceholder' id='viz1581988452598' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauProjectTry3&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TableauProjectTry3&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauProjectTry3&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1581988452598');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">This is one of many possibilities</a></h3>
+                  <p> With your feedback and goals we can personalize a dashboard to your needs, so you can vizualize your goal and start achieving it! </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">Our first subjects' data</a></li>
+                  <li><a href="#0">25 jan 2016</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><img src="assets/images/subactivity.png" alt="image"></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">The ORIGINAL SIX!</a></h3>
+                  <p>Ah yes, the good old days.  When we were making grad students exercise for sandwiches so we could record their stats. They might have thought we were crazy but now they're the ones asking us if we're hiring. </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">We tested it out</a></li>
+                  <li><a href="#0">15 Feb 2020</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><iframe width="560" height="315" src="https://www.youtube.com/embed/8Dg4ErWiTKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">Javier AKA Spiderman</a></h3>
+                  <p>I'm not saying they're the same person, but have you ever seen Javier and Spiderman at the same time? 
+                    </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">It's for everyone!</a></li>
+                  <li><a href="#0">15 Feb 2020</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><iframe width="560" height="315" src="https://www.youtube.com/embed/9i08GsBBW14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">Doug Testing out his App on some stairs</a></h3>
+                  <p>Easy to use and let's your phone do the heavy lifting. You just have to get out there.  
+                    </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">Look at this cool stuff!</a></li>
+                  <li><a href="#0">15 Feb 2020</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><img src="assets/images/ourdata.png" alt="image"></Need></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">The Realtime data from our activities</a></h3>
+                  <p>This is only the beginning, but gives you a great example of all the data you can gather about your daily activities. 
+                    </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">Remember to Get your Sleeps!</a></li>
+                  <li><a href="#0">15 Feb 2020</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ip0wUa7suW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">Brain Health is Key</a></h3>
+                  <p>Sleep is just as important and recognizable as any other activity. Yes we can totally track your sleep patterns and can make suggestions if your goal is better quality sleep. 
+                    </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">What We are Most thankful for...</a></li>
+                  <li><a href="#0">18 Feb 2020</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><img src="assets/images/group.jpg" alt="image"></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">...EACH OTHER!</a></h3>
+                  <p>Technology is cool but people that appreciate you for who you are while encouraging you to grow is priceless. </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+            <div class="col-lg-12">
+              <div class="post-single mb-50">
+                <ul class="post-tags">
+                  <li><a href="#0">Make memories and Make a difference</a></li>
+                  <li><a href="#0">18 Feb 2020</a></li>
+                </ul>
+                <div class="post-thumb">
+                  <a href="#0"><iframe width="560" height="315" src="https://www.youtube.com/embed/j0yI1KRHJe4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title"><a href="blog-single.html">Our tribe</a></h3>
+                  <p> Love our group of awesome nerds!
+                    </p>
+                </div>
+              </div>
+            </div><!-- post-single end -->
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="d-pagination" aria-label="Page navigation example">
+                <ul class="pagination justify-content-start flex-wrap">
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="sidebar">
+            <div class="widget search-widget">
+              <h4 class="widget-title">Search Key Word</h4>
+              <form class="search-from">
+                <div class="custom-input-field">
+                  <input type="text" name="search_keyword" id="search_keyword" placeholder="Keyword">
+                  <i class="fa fa-paper-plane"></i>
+                </div>
+              </form>
+            </div><!-- widget end -->
+            <div class="widget">
+              <h4 class="widget-title">News Categories</h4>
+              <ul class="category-list">
+                <li><a href="#0">Investment<span>36</span></a></li>
+                <li><a href="#0">Hyip<span>12</span></a></li>
+                <li><a href="#0">Investor<span>15</span></a></li>
+                <li><a href="#0">Support<span>22</span></a></li>
+                <li><a href="#0">Deposit<span>18</span></a></li>
+                <li><a href="#0">Payment<span>28</span></a></li>
+              </ul>
+            </div><!-- widget end -->
+            <div class="widget">
+              <h4 class="widget-title">Popular News</h4>
+              <ul class="small-post-list">
+                <li class="small-single-post">
+                  <div class="thumb"><img src="assets/images/blog/1.jpg" alt="image"></div>
+                  <div class="content">
+                    <h5 class="post-title"><a href="0">France Prepares toding Staken Its Place.</a></h5>
+                    <ul class="post-meta">
+                      <li><a href="#0">post by admin</a></li>
+                      <li><a href="#0">25 may 2019</a></li>
+                    </ul>
+                  </div>
+                </li><!-- small-single-post end -->
+                <li class="small-single-post">
+                  <div class="thumb"><img src="assets/images/blog/2.jpg" alt="image"></div>
+                  <div class="content">
+                    <h5 class="post-title"><a href="0">France Prepares toding Staken Its Place.</a></h5>
+                    <ul class="post-meta">
+                      <li><a href="#0">post by admin</a></li>
+                      <li><a href="#0">25 may 2019</a></li>
+                    </ul>
+                  </div>
+                </li><!-- small-single-post end -->
+                <li class="small-single-post">
+                  <div class="thumb"><img src="assets/images/blog/3.jpg" alt="image"></div>
+                  <div class="content">
+                    <h5 class="post-title"><a href="0">France Prepares toding Staken Its Place.</a></h5>
+                    <ul class="post-meta">
+                      <li><a href="#0">post by admin</a></li>
+                      <li><a href="#0">25 may 2019</a></li>
+                    </ul>
+                  </div>
+                </li><!-- small-single-post end -->
+                <li class="small-single-post">
+                  <div class="thumb"><img src="assets/images/blog/4.jpg" alt="image"></div>
+                  <div class="content">
+                    <h5 class="post-title"><a href="0">France Prepares toding Staken Its Place.</a></h5>
+                    <ul class="post-meta">
+                      <li><a href="#0">post by admin</a></li>
+                      <li><a href="#0">25 may 2019</a></li>
+                    </ul>
+                  </div>
+                </li><!-- small-single-post end -->
+              </ul>
+            </div><!-- widget end -->
+            <div class="widget">
+              <h4 class="widget-title">Archived</h4>
+              <ul class="archived-list">
+                <li><a href="#0">january<span>2019</span></a></li>
+                <li><a href="#0">march<span>2019</span></a></li>
+                <li><a href="#0">jun<span>2019</span></a></li>
+                <li><a href="#0">July<span>2019</span></a></li>
+              </ul>
+            </div><!-- widget end -->
+            <div class="widget">
+              <h4 class="widget-title">News Tag</h4>
+              <ul class="tags">
+                <li><a href="#0">survey</a></li>
+                <li><a href="#0">payment</a></li>
+                <li><a href="#0">event</a></li>
+                <li><a href="#0">research</a></li>
+                <li><a href="#0">Customer support</a></li>
+              </ul>
+            </div><!-- widget end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog-setcion end -->
+
+    <!-- footer-section start -->
+  <footer class="footer-section bg_img" data-background="assets/images/elements/footer-shape.png">
+    <div class="man-left">
+      <img src="assets/images/elements/footer-left-man.png" alt="image">
+      <div class="coin"><img src="assets/images/elements/coin.png" alt="image"></div>
+    </div>
+    <div class="dot-left"><img src="assets/images/elements/footer-left-dot.png" alt="image"></div>
+    <div class="man-right"><img src="assets/images/elements/footer-right-man.png" alt=""></div>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row mb-none-30">
+          <div class="col-lg-3 col-sm-6 order-lg-1 order-sm-1">
+            <div class="footer-widget about-widget mb-30">
+              <a href="#0" class="footer-logo"><img src="assets/images/logo.png" alt="image"></a>
+              <p>Massain eu dictum in, facilisi mauriorci tincidunt. Mauris suspendisse, faucibus id tellus pellentesque vestibulupendisse mauris, tempus nibh ac.</p>
+              <ul class="social-media-links">
+                <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 order-lg-2 order-sm-3">
+            <div class="footer-widget mb-30">
+              <h3 class="footer-widget-title">Company</h3>
+              <ul class="short-links">
+                <li><a href="#0">Faq</a></li>
+                <li><a href="#0">News</a></li>
+                <li><a href="#0">Support Center</a></li>
+                <li><a href="#0">Tream & Condition</a></li>
+                <li><a href="#0">Location</a></li>
+                <li><a href="#0">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 order-lg-3 order-sm-4">
+            <div class="footer-widget mb-30">
+              <h3 class="footer-widget-title">Useful Link</h3>
+              <ul class="short-links">
+                <li><a href="#0">Payment Method</a></li>
+                <li><a href="#0">Pricing Plan</a></li>
+                <li><a href="#0">Faq</a></li>
+                <li><a href="#0">Testimonial</a></li>
+                <li><a href="#0">Investment</a></li>
+                <li><a href="#0">Investor</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 order-lg-4 order-sm-5">
+            <div class="footer-widget mb-30">
+              <h3 class="footer-widget-title">Investment</h3>
+              <ul class="short-links">
+                <li><a href="#0">Starter Plan</a></li>
+                <li><a href="#0">Medium Plan</a></li>
+                <li><a href="#0">Special Plan </a></li>
+                <li><a href="#0">Vip Plan</a></li>
+                <li><a href="#0">Silver Plan</a></li>
+                <li><a href="#0">Gold Plan</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 order-lg-5 order-sm-2">
+            <div class="footer-widget mb-30">
+              <h3 class="footer-widget-title">Contact Information</h3>
+              <ul class="company-info-list">
+                <li>medino,  kitaniya road , USA</li>
+                <li>Call Us Now 1-234-567-890</li>
+                <li>demosupport@.com</li>
+                <li>www.exmaple4500@gmail.com</li>
+                <li>www.democompany@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Copyright hyipzen © 2020. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-section end -->
+
+
+  
+</div>
+
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.0.0.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/menu-spy.min.js"></script>
+    <script src="assets/js/vendor/jquery.easing.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
